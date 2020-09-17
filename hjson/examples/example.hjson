@@ -1,0 +1,48 @@
+# comments are useful
+{
+   # specify rate in requests/second
+   rate: 1000
+
+   #  you may also use
+   // c style
+   /* or block
+      comments */
+
+   # key names do not need to be placed in
+   # quotes unless they contain a punctuator
+   # character {}[],:
+   key: 1
+
+   # strings may also omit quotes if they do
+   # not start with a punctuator
+   text: look ma, no quotes!
+
+   # quoteless strings do not use escapes
+   # and end at the LF/newline
+
+   # commas are optional
+   commas:
+   {
+     one: 1
+     two: 2
+   }
+
+   # trailing commas are allowed
+   trailing:
+   {
+     one: 1,
+     two: 2,
+   }
+
+   # multiline string
+   haiku:
+     '''
+     JSON I love you.
+     But you strangle my expression.
+     This is so much better.
+     '''
+
+   # Hjson is a superset of JSON so you
+   # may use any valid JSON syntax:
+   favNumbers: [ 1, 2, 3, 6, 42 ]
+}
